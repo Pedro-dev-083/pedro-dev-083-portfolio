@@ -1,0 +1,16 @@
+{
+  "name": "pedro-dev-083-portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio to show my projects and tell more about myself.",
+  "main": "index.js",
+  "author": "Pedro Souza de Azevedo",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "dev": "next dev"
+  }
+}
