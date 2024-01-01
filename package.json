@@ -2,7 +2,6 @@
   "name": "pedro-dev-083-portfolio",
   "version": "1.0.0",
   "description": "A portfolio to show my projects and tell more about myself.",
-  "main": "index.tsx",
   "author": "Pedro-dev-083 <pedroazevedo83@hotmail.com>",
   "license": "MIT",
   "dependencies": {
