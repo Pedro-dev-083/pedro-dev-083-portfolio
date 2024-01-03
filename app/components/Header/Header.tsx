@@ -1,20 +1,25 @@
 "use client";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { HeaderMain } from "./styled";
+import RouteLink from "./RouteLink/RouteLink";
 
 export default function Header() {
-   const router = usePathname();
+   const currentPath = usePathname();
 
-   const currentPath = router;
+   //TODO: Try to use as a provider for the current RouteLinks
+   function isCurrentPath(path: string) {
+      return path === currentPath ? "" : path;
+   }
+
    return (
-      <div>
-         <p>This is a header</p>
-         <p>You are in {currentPath}</p>
-         {router === "/" ? <p>Home</p> : <Link href={"/"}>Home</Link>}
-         <br />
-         <Link href={"/about"}>About</Link>
-         <br />
-         <Link href={"/contact"}>About</Link>
-      </div>
+      <HeaderMain>
+         <div>
+            <RouteLink href={"/"}>Home</RouteLink>
+            <br />
+            <RouteLink href={"/about"}>About</RouteLink>
+            <br />
+            <RouteLink href={"/Contact"}>Contact</RouteLink>
+         </div>
+      </HeaderMain>
    );
 }

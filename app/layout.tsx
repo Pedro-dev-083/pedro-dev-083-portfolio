@@ -1,4 +1,5 @@
 import Header from "./components/Header/Header";
+import GlobalStyles from "./theme/GlobalStyles";
 
 export default function RootLayout({
    children,
@@ -8,6 +9,7 @@ export default function RootLayout({
    return (
       <html lang="pt-br">
          <body>
+            <GlobalStyles />
             <Header />
             {children}
          </body>
