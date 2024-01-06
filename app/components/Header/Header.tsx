@@ -31,14 +31,12 @@ export default function Header() {
                      >
                         Home
                      </RouteLink>
-                     <br />
                      <RouteLink
                         iAmTheCurrentLink={isCurrentPath("/about")}
                         href={"/about"}
                      >
                         About
                      </RouteLink>
-                     <br />
                      <RouteLink
                         iAmTheCurrentLink={isCurrentPath("/contact")}
                         href={"/contact"}

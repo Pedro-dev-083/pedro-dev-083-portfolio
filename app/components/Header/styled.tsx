@@ -13,6 +13,7 @@ const Container = styled.div`
    justify-content: space-between;
    align-items: center;
    width: 100%;
+   height: 100%;
 `;
 
 const LogoContainer = styled.div`
@@ -20,11 +21,11 @@ const LogoContainer = styled.div`
 `;
 
 const RoutesContainer = styled.div`
-   background-color: yellow;
+   background-color: #161616;
    display: flex;
-   flex-flow: row;
    justify-content: space-between;
    align-items: center;
+   height: 100%;
    width: 20%;
 `;
 

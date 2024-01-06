@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ContainerRouteLink } from "./styled";
 
 interface LinkProps {
    children: React.ReactNode;
@@ -12,8 +13,10 @@ export default function RouteLink({
    ...props
 }: LinkProps) {
    return (
-      <Link href={href} {...props}>
-         {children}
-      </Link>
+      <ContainerRouteLink>
+         <Link href={href} {...props}>
+            {children}
+         </Link>
+      </ContainerRouteLink>
    );
 }
