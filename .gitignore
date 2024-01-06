@@ -128,4 +128,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# desktop.ini is here because I needed to customize the icon folder
 desktop.ini
