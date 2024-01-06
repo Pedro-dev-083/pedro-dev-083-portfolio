@@ -13,7 +13,7 @@ export default function RouteLink({
 }: LinkProps) {
    return (
       <Link href={href} {...props}>
-         {iAmTheCurrentLink ? `It is me: ${children}` : children}
+         {children}
       </Link>
    );
 }

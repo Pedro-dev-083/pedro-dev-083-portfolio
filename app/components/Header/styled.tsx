@@ -2,16 +2,30 @@ import styled from "styled-components";
 
 const HeaderMain = styled.header`
    background-color: black;
+   height: 50px;
 `;
 
 const Container = styled.div`
-   padding: 0 0.5rem;
+   position: relative;
+   background-color: red;
    display: flex;
-   flex-flow: column nowrap;
-   justify-content: center;
+   flex-flow: row;
+   justify-content: space-between;
    align-items: center;
-   height: 100vh;
-   min-height: 100vh;
+   width: 100%;
 `;
 
-export { Container, HeaderMain };
+const LogoContainer = styled.div`
+   background-color: blue;
+`;
+
+const RoutesContainer = styled.div`
+   background-color: yellow;
+   display: flex;
+   flex-flow: row;
+   justify-content: space-between;
+   align-items: center;
+   width: 20%;
+`;
+
+export { Container, HeaderMain, LogoContainer, RoutesContainer };

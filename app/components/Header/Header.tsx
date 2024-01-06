@@ -1,6 +1,11 @@
 "use client";
 import { usePathname } from "next/navigation";
-import { HeaderMain } from "./styled";
+import {
+   Container,
+   HeaderMain,
+   LogoContainer,
+   RoutesContainer,
+} from "./styled";
 import RouteLink from "./RouteLink/RouteLink";
 import { useNotFound } from "../../NotFoundProvider";
 
@@ -15,25 +20,33 @@ export default function Header() {
       <>
          {!notFound && (
             <HeaderMain>
-               <div>
-                  <RouteLink iAmTheCurrentLink={isCurrentPath("/")} href={"/"}>
-                     Home
-                  </RouteLink>
-                  <br />
-                  <RouteLink
-                     iAmTheCurrentLink={isCurrentPath("/about")}
-                     href={"/about"}
-                  >
-                     About
-                  </RouteLink>
-                  <br />
-                  <RouteLink
-                     iAmTheCurrentLink={isCurrentPath("/contact")}
-                     href={"/contact"}
-                  >
-                     Contact
-                  </RouteLink>
-               </div>
+               <Container>
+                  <LogoContainer>
+                     <p> Pedro Souza de Azevedo </p>
+                  </LogoContainer>
+                  <RoutesContainer>
+                     <RouteLink
+                        iAmTheCurrentLink={isCurrentPath("/")}
+                        href={"/"}
+                     >
+                        Home
+                     </RouteLink>
+                     <br />
+                     <RouteLink
+                        iAmTheCurrentLink={isCurrentPath("/about")}
+                        href={"/about"}
+                     >
+                        About
+                     </RouteLink>
+                     <br />
+                     <RouteLink
+                        iAmTheCurrentLink={isCurrentPath("/contact")}
+                        href={"/contact"}
+                     >
+                        Contact
+                     </RouteLink>
+                  </RoutesContainer>
+               </Container>
             </HeaderMain>
          )}
       </>
