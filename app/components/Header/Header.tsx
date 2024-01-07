@@ -8,7 +8,12 @@ import {
 } from "./styled";
 import RouteLink from "./RouteLink/RouteLink";
 import { useNotFound } from "../../NotFoundProvider";
+import { Stylish } from "next/font/google";
 
+const stylish = Stylish({
+   subsets: ["latin"],
+   weight: "400",
+});
 export default function Header() {
    const currentPath = usePathname();
    const { notFound } = useNotFound();
@@ -24,7 +29,7 @@ export default function Header() {
                   <LogoContainer>
                      <p> Pedro Souza de Azevedo </p>
                   </LogoContainer>
-                  <RoutesContainer>
+                  <RoutesContainer className={stylish.className}>
                      <RouteLink
                         iAmTheCurrentLink={isCurrentPath("/")}
                         href={"/"}

@@ -2,6 +2,11 @@
 import Header from "./components/Header/Header";
 import GlobalStyles from "./theme/GlobalStyles";
 import NotFoundProvider from "./NotFoundProvider";
+import { Playfair_Display } from "next/font/google";
+
+const playfair_display = Playfair_Display({
+   subsets: ["latin"],
+});
 
 export default function RootLayout({
    children,
@@ -9,7 +14,7 @@ export default function RootLayout({
    children: React.ReactNode;
 }) {
    return (
-      <html lang="pt-br">
+      <html className={playfair_display.className} lang="pt-br">
          <body>
             <NotFoundProvider>
                <GlobalStyles />

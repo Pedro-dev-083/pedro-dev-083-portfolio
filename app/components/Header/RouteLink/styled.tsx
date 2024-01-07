@@ -16,9 +16,9 @@ const ContainerRouteLink = styled.div`
       display: block;
       position: absolute;
       inset: 0 0 0 0;
-      border-bottom: 3px solid white;
+      border-bottom: 3px solid #fdfdfd;
       z-index: 1;
-      transition: transform 0.3s ease;
+      transition: transform 0.65s ease-in-out;
    }
 
    a {
