@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
+const margin = "1.75em";
+
 const HeaderMain = styled.header`
-   background-color: black;
-   height: 50px;
+   background-color: #070606;
+   height: 60px;
 `;
 
 const Container = styled.div`
    position: relative;
-   background-color: red;
    display: flex;
    flex-flow: row;
    justify-content: space-between;
@@ -17,12 +18,20 @@ const Container = styled.div`
 `;
 
 const LogoContainer = styled.div`
-   background-color: blue;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-left: ${margin};
+   text-decoration: none;
+   p {
+      margin: 0;
+      color: #fdfdfd;
+   }
 `;
 
 const RoutesContainer = styled.div`
-   background-color: #161616;
    display: flex;
+   margin-right: ${margin};
    justify-content: space-between;
    align-items: center;
    height: 100%;

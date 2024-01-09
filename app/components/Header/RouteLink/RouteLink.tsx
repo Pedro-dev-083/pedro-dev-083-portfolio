@@ -1,19 +1,22 @@
 import Link from "next/link";
 import { ContainerRouteLink } from "./styled";
+import { StyleSheetManager } from "styled-components";
 
-interface LinkProps {
+export interface LinkProps {
    children: React.ReactNode;
    href: string;
-   iAmTheCurrentLink: boolean;
+   iamthecurrentlink?: boolean;
 }
+
+//TODO: Solve the style-component + typescript problem
 export default function RouteLink({
    children,
    href,
-   iAmTheCurrentLink,
+   iamthecurrentlink,
    ...props
 }: LinkProps) {
    return (
-      <ContainerRouteLink>
+      <ContainerRouteLink iamthecurrentlink={iamthecurrentlink}>
          <Link href={href} {...props}>
             {children}
          </Link>

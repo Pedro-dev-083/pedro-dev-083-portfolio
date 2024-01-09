@@ -1,15 +1,19 @@
 import styled from "styled-components";
+import { LinkProps } from "./RouteLink";
 
-const ContainerRouteLink = styled.div`
-   a::before {
-      transform: scaleX(0);
-      transform-origin: bottom right;
-   }
-
-   a:hover::before {
-      transform: scaleX(1);
-      transform-origin: bottom left;
-   }
+const ContainerRouteLink = styled.div<Pick<LinkProps, "iamthecurrentlink">>`
+   ${(props) =>
+      props.iamthecurrentlink
+         ? ""
+         : `
+      a::before {
+         transform: scaleX(0);
+      }
+   
+      a:hover::before {
+         transform: scaleX(1);
+      }
+   `}
 
    a::before {
       content: "";
@@ -23,9 +27,14 @@ const ContainerRouteLink = styled.div`
 
    a {
       position: relative;
-      color: white;
+      color: #fdfdfd;
       text-decoration: none;
       font-size: 1.75rem;
+      ${(props) =>
+         props.iamthecurrentlink &&
+         `
+         cursor: initial;
+      `}
    }
 `;
 
