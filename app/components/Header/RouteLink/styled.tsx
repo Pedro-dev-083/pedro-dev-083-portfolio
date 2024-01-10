@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import { LinkProps } from "./RouteLink";
 
-const ContainerRouteLink = styled.div<Pick<LinkProps, "iamthecurrentlink">>`
+const ContainerRouteLink = styled.div<{ $iAmTheCurrentLink: boolean }>`
    ${(props) =>
-      props.iamthecurrentlink
+      props.$iAmTheCurrentLink
          ? ""
          : `
       a::before {
@@ -31,7 +30,7 @@ const ContainerRouteLink = styled.div<Pick<LinkProps, "iamthecurrentlink">>`
       text-decoration: none;
       font-size: 1.75rem;
       ${(props) =>
-         props.iamthecurrentlink &&
+         props.$iAmTheCurrentLink &&
          `
          cursor: initial;
       `}

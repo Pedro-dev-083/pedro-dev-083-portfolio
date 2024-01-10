@@ -35,19 +35,19 @@ export default function Header() {
                   </Link>
                   <RoutesContainer className={stylish.className}>
                      <RouteLink
-                        iamthecurrentlink={isCurrentPath("/")}
+                        iAmTheCurrentLink={isCurrentPath("/")}
                         href={"/"}
                      >
                         Home
                      </RouteLink>
                      <RouteLink
-                        iamthecurrentlink={isCurrentPath("/about")}
+                        iAmTheCurrentLink={isCurrentPath("/about")}
                         href={"/about"}
                      >
                         About
                      </RouteLink>
                      <RouteLink
-                        iamthecurrentlink={isCurrentPath("/contact")}
+                        iAmTheCurrentLink={isCurrentPath("/contact")}
                         href={"/contact"}
                      >
                         Contact
