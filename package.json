@@ -2,13 +2,15 @@
   "name": "pedro-dev-083-portfolio",
   "version": "1.0.0",
   "description": "A portfolio to show my projects and tell more about myself.",
-  "main": "index.tsx",
   "author": "Pedro-dev-083 <pedroazevedo83@hotmail.com>",
   "license": "MIT",
   "dependencies": {
     "next": "^14.0.4",
+    "normalize.css": "^8.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.1.6",
+    "styled-normalize": "^8.1.0"
   },
   "scripts": {
     "dev": "next dev",
