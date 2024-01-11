@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import GlobalStyles from "./theme/GlobalStyles";
 import NotFoundProvider from "./NotFoundProvider";
 import { Playfair_Display } from "next/font/google";
+import Footer from "./components/Footer/Footer";
 
 const playfair_display = Playfair_Display({
    subsets: ["latin"],
@@ -20,6 +21,7 @@ export default function RootLayout({
                <GlobalStyles />
                <Header />
                {children}
+               <Footer />
             </NotFoundProvider>
          </body>
       </html>
