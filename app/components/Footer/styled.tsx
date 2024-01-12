@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterMain = styled.footer`
-   background-color: blue;
+   background-color: #070606;
    height: 280px;
    display: flex;
    justify-content: center;
@@ -9,29 +9,38 @@ export const FooterMain = styled.footer`
 `;
 
 export const Container = styled.div`
-   background-color: red;
-   width: 45%;
+   width: 30%;
    height: 100%;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   grid-gap: 10px;
+   grid-template-rows: repeat(2, 1fr);
+   grid-column-gap: 20px;
+   grid-row-gap: 0px;
 `;
 
 export const LogoContainer = styled.div`
-   background-color: yellow;
-   height: 120px;
-   width: 100px;
+   height: 100%;
+   width: 100%;
+   color: white;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   grid-area: 1 / 1 / 2 / 2;
 `;
 
 export const ContactContainer = styled.div`
-   background-color: purple;
-   height: 120px;
-   width: 100px;
+   height: 100%;
+   width: 100%;
+   color: white;
+   grid-area: 1 / 2 / 2 / 3;
 `;
 
 export const RightsContainer = styled.div`
-   background-color: green;
-   height: 120px;
-   width: 100px;
-   grid-column: span 2;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   grid-area: 2 / 1 / 3 / 3;
 `;
