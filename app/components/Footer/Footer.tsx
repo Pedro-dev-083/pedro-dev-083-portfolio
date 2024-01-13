@@ -7,7 +7,6 @@ import {
    LogoContainer,
    RightsContainer,
 } from "./styled";
-import { FaEnvelope } from "react-icons/fa";
 import Image from "next/image";
 import personPic from "../../public/images/LogoPerson.jpeg";
 
@@ -20,13 +19,12 @@ export default function Footer() {
 
    const iconSize = 30;
    const iconColor = "white";
-
    return (
       <>
          {!notFound && (
             <FooterMain>
                <Container>
-                  <LogoContainer>
+                  <LogoContainer aria-label="teste">
                      <Image
                         src={personPic}
                         alt="Image created by Bing Image Creator. 
@@ -51,13 +49,6 @@ export default function Footer() {
                         rel="noopener noreferrer"
                      >
                         <GrGithub color={iconColor} size={iconSize} />
-                     </a>
-                     <a
-                        href="mailto:pedroazevedo83@hotmail.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                     >
-                        <FaEnvelope color={iconColor} size={iconSize} />
                      </a>
                   </ContactContainer>
                   <RightsContainer>

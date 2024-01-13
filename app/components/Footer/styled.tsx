@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterMain = styled.footer`
    background-color: #070606;
-   height: 280px;
+   height: 200px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -10,7 +10,7 @@ export const FooterMain = styled.footer`
 
 export const Container = styled.div`
    width: 30%;
-   height: 100%;
+   height: 80%;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-template-rows: repeat(2, 1fr);
@@ -21,16 +21,18 @@ export const Container = styled.div`
 export const LogoContainer = styled.div`
    height: 100%;
    width: 100%;
-   color: white;
    display: flex;
    justify-content: flex-end;
-   align-items: center;
+   align-items: flex-end;
    grid-area: 1 / 1 / 2 / 2;
 `;
 
 export const ContactContainer = styled.div`
    height: 100%;
-   width: 100%;
+   width: 50%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
    color: white;
    grid-area: 1 / 2 / 2 / 3;
 `;
