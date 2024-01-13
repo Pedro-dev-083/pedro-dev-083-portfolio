@@ -10,6 +10,8 @@ import RouteLink from "./RouteLink/RouteLink";
 import { useNotFound } from "../../NotFoundProvider";
 import { Stylish } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
+import logoP from "../../public/images/LogoP.jpeg";
 
 const stylish = Stylish({
    subsets: ["latin"],
@@ -29,8 +31,11 @@ export default function Header() {
                <Container>
                   <Link style={{ textDecoration: "none" }} href={"/"}>
                      <LogoContainer>
-                        <p> Pedro </p>
-                        <p> Azevedo </p>
+                        <Image
+                           src={logoP}
+                           alt="Created by AI. Icon of the letter 'P' designed to resemble a computer circuit. The letter is in white, set against a black background."
+                           width={50}
+                        />
                      </LogoContainer>
                   </Link>
                   <RoutesContainer className={stylish.className}>
