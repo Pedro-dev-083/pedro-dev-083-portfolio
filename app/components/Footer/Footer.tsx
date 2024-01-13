@@ -8,6 +8,8 @@ import {
    RightsContainer,
 } from "./styled";
 import { FaEnvelope } from "react-icons/fa";
+import Image from "next/image";
+import personPic from "../../public/images/LogoPerson.jpeg";
 
 export default function Footer() {
    const { notFound } = useNotFound();
@@ -25,7 +27,15 @@ export default function Footer() {
             <FooterMain>
                <Container>
                   <LogoContainer>
-                     <p>Pedro Azevedo</p>
+                     <Image
+                        src={personPic}
+                        alt="Image created by Bing Image Creator. 
+                        Pixel art of a programmer typing on a laptop screen. 
+                        The background is black, and the programmer has straight black hair, 
+                        a scruffy black beard, and tan skin. He is wearing a black hoodie jacket 
+                        and blue jeans, with his face illuminated by the laptop screen"
+                        width={100}
+                     />
                   </LogoContainer>
                   <ContactContainer>
                      <a
