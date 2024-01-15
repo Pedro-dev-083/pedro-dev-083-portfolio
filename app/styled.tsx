@@ -15,9 +15,14 @@ export const Container = styled.div`
 `;
 
 export const PhotoContainer = styled.div`
-   background-color: green;
+   padding: 5px;
+   margin: 5px;
+   position: relative;
+   overflow: "hidden";
    height: 10rem;
    width: 10rem;
+   border-radius: 50%;
+   border: "5px solid #F00";
 `;
 
 export const AboutContainer = styled.div`
