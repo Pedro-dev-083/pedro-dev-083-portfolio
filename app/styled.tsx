@@ -10,7 +10,7 @@ export const Container = styled.div`
    background-color: blue;
    display: flex;
    width: 100%;
-   justify-content: center;
+   justify-content: space-evenly;
    align-items: center;
 `;
 
@@ -19,8 +19,8 @@ export const PhotoContainer = styled.div`
    margin: 5px;
    position: relative;
    overflow: "hidden";
-   height: 10rem;
-   width: 10rem;
+   height: 250px;
+   width: 250px;
    border-radius: 50%;
    border: "5px solid #F00";
 `;
