@@ -2,10 +2,14 @@
 import Image from "next/image";
 import {
    AboutContainer,
+   AboutText,
    Container,
+   GithubText,
+   HelloText,
    MainContainer,
    PhotoContainer,
 } from "./styled";
+import Link from "next/link";
 
 export default function Page() {
    return (
@@ -22,18 +26,30 @@ export default function Page() {
             </PhotoContainer>
             <AboutContainer>
                {/* TODO: Make a animation on Hello World, and the "I am Pedro" move to About Page */}
-               <p>Hello World, I am Pedro</p>
+               <HelloText>
+                  <b> Hello World </b>, I am Pedro
+               </HelloText>
                {/* TODO: Make some animation or icons about coffees and codes */}
-               <p>
+               <AboutText>
                   I am just a guy who loves to drink code and develop coffee.
-                  Here is my little space where you can find my projects and
-                  more about me.
-               </p>
+                  Here is my little space where you can find my{" "}
+                  <Link href={"/projects"}> projects</Link> and more{" "}
+                  <Link href={"/about"}> about me.</Link>
+               </AboutText>
                {/* TODO: Make a link to go on the repo */}
-               <p>
+               <GithubText>
                   If you liked this portfolio, don&apos;t forget to leave a star
-                  on the github repo.
-               </p>
+                  on the{" "}
+                  <a
+                     href={
+                        "https://github.com/Pedro-dev-083/pedro-dev-083-portfolio"
+                     }
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
+                     github repo.
+                  </a>
+               </GithubText>
             </AboutContainer>
          </Container>
       </MainContainer>

@@ -28,3 +28,18 @@ export const PhotoContainer = styled.div`
 export const AboutContainer = styled.div`
    background-color: yellow;
 `;
+
+export const HelloText = styled.h1`
+   font-size: 20px;
+   b {
+      background-color: #3dff3d;
+   }
+`;
+
+export const AboutText = styled.p`
+   font-size: 18px;
+`;
+
+export const GithubText = styled.p`
+   font-size: 16px;
+`;
