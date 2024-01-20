@@ -37,9 +37,9 @@ export default function Page() {
                </HelloText>
                {/* TODO: Make some animation or icons about coffees and codes */}
                <AboutText>
-                  I am just a guy who loves to drink code and develop coffee.
+                  {/* I am just a guy who loves to drink code and develop coffee. */}
                   Here is my little space where you can find my{" "}
-                  <Link href={"/projects"}> projects</Link> and more{" "}
+                  <Link href={"/projects"}>projects</Link> and more{" "}
                   <Link href={"/about"}> about me.</Link>
                </AboutText>
                {/* TODO: Make a link to go on the repo */}

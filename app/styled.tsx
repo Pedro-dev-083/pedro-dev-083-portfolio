@@ -28,6 +28,28 @@ export const PhotoContainer = styled.div`
 export const AboutContainer = styled.div`
    /* background-color: yellow; */
    width: 50%;
+   a {
+      position: relative;
+      color: black;
+      text-decoration: none;
+   }
+
+   a::before {
+      content: "";
+      display: block;
+      position: absolute;
+      inset: 0 0 0 0;
+      background-color: #3dff3d;
+      z-index: -1;
+      transform: scaleX(0);
+      transform-origin: bottom left;
+      transition: transform 0.95s ease-in-out;
+   }
+
+   a:hover::before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+   }
 `;
 
 export const HelloText = styled.h1<{ $shouldAnimate: boolean }>`
@@ -43,11 +65,6 @@ export const HelloText = styled.h1<{ $shouldAnimate: boolean }>`
       background-color: #3dff3d;
       z-index: -1;
       transition: transform 0.95s ease-in-out;
-   }
-
-   b::before {
-      transform: scaleX(0);
-      transform-origin: bottom right;
    }
 
    ${(props) =>
