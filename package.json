@@ -5,7 +5,7 @@
   "author": "Pedro-dev-083 <pedroazevedo83@hotmail.com>",
   "license": "MIT",
   "dependencies": {
-    "next": "^14.0.4",
+    "next": "^14.1.0",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

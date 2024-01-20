@@ -10,8 +10,15 @@ import {
    PhotoContainer,
 } from "./styled";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Page() {
+   const [shouldAnimate, setShouldAnimate] = useState(false);
+
+   useEffect(() => {
+      setShouldAnimate(true);
+   }, []);
+
    return (
       <MainContainer>
          <Container>
@@ -25,9 +32,8 @@ export default function Page() {
                />
             </PhotoContainer>
             <AboutContainer>
-               {/* TODO: Make a animation on Hello World, and the "I am Pedro" move to About Page */}
-               <HelloText>
-                  <b> Hello World </b>, I am Pedro
+               <HelloText $shouldAnimate={shouldAnimate}>
+                  <b>Hello World</b>, I am Pedro
                </HelloText>
                {/* TODO: Make some animation or icons about coffees and codes */}
                <AboutText>

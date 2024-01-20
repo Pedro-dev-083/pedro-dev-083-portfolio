@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.main`
-   background-color: red;
+   /* background-color: red; */
    display: flex;
    margin: 0;
 `;
 
 export const Container = styled.div`
-   background-color: blue;
+   /* background-color: blue; */
    display: flex;
    width: 100%;
    justify-content: space-evenly;
@@ -26,18 +26,48 @@ export const PhotoContainer = styled.div`
 `;
 
 export const AboutContainer = styled.div`
-   background-color: yellow;
+   /* background-color: yellow; */
+   width: 50%;
 `;
 
-export const HelloText = styled.h1`
-   font-size: 20px;
+export const HelloText = styled.h1<{ $shouldAnimate: boolean }>`
+   font-size: 80px;
    b {
-      background-color: #3dff3d;
+      position: relative;
    }
+   b::before {
+      content: "";
+      display: block;
+      position: absolute;
+      inset: 0 0 0 0;
+      background-color: #3dff3d;
+      z-index: -1;
+      transition: transform 0.95s ease-in-out;
+   }
+
+   b::before {
+      transform: scaleX(0);
+      transform-origin: bottom right;
+   }
+
+   ${(props) =>
+      props.$shouldAnimate
+         ? `
+      b:before {
+         transform: scaleX(1);
+         transform-origin: bottom left;
+      }
+         `
+         : `
+      b:before {
+         transform: scaleX(0);
+         transform-origin: bottom right;
+      }
+   `}
 `;
 
 export const AboutText = styled.p`
-   font-size: 18px;
+   font-size: 30px;
 `;
 
 export const GithubText = styled.p`
