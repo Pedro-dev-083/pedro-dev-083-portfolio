@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.main`
-   /* background-color: red; */
    display: flex;
+   justify-content: center;
+   align-items: center;
    margin: 0;
 `;
 
 export const Container = styled.div`
-   /* background-color: blue; */
    display: flex;
-   width: 100%;
+   width: 80%;
    justify-content: space-evenly;
    align-items: center;
 `;
@@ -26,7 +26,6 @@ export const PhotoContainer = styled.div`
 `;
 
 export const AboutContainer = styled.div`
-   /* background-color: yellow; */
    width: 50%;
    a {
       position: relative;
@@ -43,7 +42,7 @@ export const AboutContainer = styled.div`
       z-index: -1;
       transform: scaleX(0);
       transform-origin: bottom left;
-      transition: transform 0.95s ease-in-out;
+      transition: transform 0.35s ease-in-out;
    }
 
    a:hover::before {
