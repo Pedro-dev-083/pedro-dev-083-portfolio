@@ -24,7 +24,7 @@ export default function Footer() {
          {!notFound && (
             <FooterMain>
                <Container>
-                  <LogoContainer aria-label="teste">
+                  <LogoContainer>
                      <Image
                         src={personPic}
                         alt="Image created by Bing Image Creator. 
