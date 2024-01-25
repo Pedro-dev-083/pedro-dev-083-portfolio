@@ -1,12 +1,15 @@
 "use client";
 import Image from "next/image";
 import { PhotoContainer } from "./styled";
+import { SiJavascript } from "react-icons/si";
+import Modal from "../components/Modal/Modal";
+import { useState } from "react";
 
 export default function About() {
+   const [stateModal, setStateModal] = useState<boolean>(false);
    return (
       <div>
          <div>
-            {/*TODO: I think here will make more sense use my photo than the index page, and there instead my photo, maybe I can make something related to the world*/}
             <PhotoContainer>
                <Image
                   src={"https://avatars.githubusercontent.com/u/60190590?v=4"}
@@ -52,6 +55,10 @@ export default function About() {
          <div>
             {/* TODO: In a technology that I click, I can show I project that I used that technology */}
             <p>My stacks, which I am good, and which I am currently learning</p>
+            <SiJavascript onClick={() => setStateModal(true)} />
+            <Modal isCalled={stateModal} setIsCalled={setStateModal}>
+               <p>Hello</p>
+            </Modal>
          </div>
          <div>
             <p>Certifications</p>
