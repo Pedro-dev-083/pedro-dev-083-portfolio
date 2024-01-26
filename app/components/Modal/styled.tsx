@@ -15,8 +15,8 @@ export const ModalContainer = styled.div`
    z-index: 1;
 `;
 
-export const Container = styled.div`
+export const Container = styled.div<{ height: number; width: number }>`
    background-color: #fdfdfd;
-   height: 400px;
-   width: 700px;
+   height: ${(props) => props.height}px;
+   width: ${(props) => props.width}px;
 `;
