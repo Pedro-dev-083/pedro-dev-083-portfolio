@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { Container, ModalContainer } from "./styled";
 
 interface ModalProps {
@@ -15,11 +16,25 @@ export default function Modal({
    height = 400,
    width = 700,
 }: ModalProps) {
+   const modalRef = useRef<HTMLDivElement | null>(null);
+   useEffect(() => {
+      const handleOutsideClick = (e: MouseEvent) => {
+         if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
+            setIsCalled(false);
+         }
+      };
+
+      document.addEventListener("mousedown", handleOutsideClick);
+
+      return () => {
+         document.removeEventListener("mousedown", handleOutsideClick);
+      };
+   }, [setIsCalled]);
    return (
       <>
          {isCalled ? (
             <ModalContainer>
-               <Container height={height} width={width}>
+               <Container ref={modalRef} height={height} width={width}>
                   <p onClick={() => setIsCalled(false)}>X</p>
                   {children}
                </Container>
