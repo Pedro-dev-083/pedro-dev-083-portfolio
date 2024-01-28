@@ -52,7 +52,13 @@ export default function About() {
          <div>
             {/* TODO: In a technology that I click, I can show I project that I used that technology */}
             <p>My stacks, which I am good, and which I am currently learning</p>
-            <StackModal />
+            <StackModal iconName="SiJavascript" />
+            <StackModal iconName="SiNodedotjs" />
+            <StackModal iconName="SiTypescript" />
+            <StackModal iconName="SiDotnet" />
+            <StackModal iconName="SiMongodb" />
+            <StackModal iconName="SiMysql" />
+            <StackModal iconName="SiNextdotjs" />
          </div>
          <div>
             <p>Certifications</p>
