@@ -17,6 +17,17 @@ export const ModalContainer = styled.div`
 
 export const Container = styled.div<{ height: number; width: number }>`
    background-color: #fdfdfd;
+   border-radius: 10px;
    height: ${(props) => props.height}px;
    width: ${(props) => props.width}px;
+   #iconExitContainer {
+      position: relative;
+      width: 95%;
+   }
+   #iconExit {
+      position: absolute;
+      font-size: 25px;
+      right: 0;
+      cursor: pointer;
+   }
 `;

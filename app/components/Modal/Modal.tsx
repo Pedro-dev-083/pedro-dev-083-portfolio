@@ -35,7 +35,11 @@ export default function Modal({
          {isCalled ? (
             <ModalContainer>
                <Container ref={modalRef} height={height} width={width}>
-                  <p onClick={() => setIsCalled(false)}>X</p>
+                  <div id="iconExitContainer">
+                     <p id="iconExit" onClick={() => setIsCalled(false)}>
+                        X
+                     </p>
+                  </div>
                   {children}
                </Container>
             </ModalContainer>

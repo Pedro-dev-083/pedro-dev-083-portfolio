@@ -39,8 +39,9 @@ export default function StackModal({
    return LazyIcon ? (
       <React.Suspense fallback={<div>Loading...</div>}>
          <LazyIcon onClick={() => setStateModal(true)} />
+         {/* TODO: Add the knowledge i have on this technology */}
          <Modal isCalled={stateModal} setIsCalled={setStateModal}>
-            <p>Hello</p>
+            <p>{iconName}</p>
          </Modal>
       </React.Suspense>
    ) : null;
