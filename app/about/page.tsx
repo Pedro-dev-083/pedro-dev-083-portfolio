@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { PhotoContainer } from "./styled";
+import { PhotoContainer, StacksContainer } from "./styled";
 import StackModal from "./StackModal/StackModal";
 
 export default function About() {
@@ -49,9 +49,8 @@ export default function About() {
             <p>Youtube, cannot forget</p>
             <p>Edit videos</p>
          </div>
-         <div>
+         <StacksContainer>
             {/* TODO: In a technology that I click, I can show I project that I used that technology */}
-            <p>My stacks, which I am good, and which I am currently learning</p>
             <StackModal iconName="SiJavascript" />
             <StackModal iconName="SiNodedotjs" />
             <StackModal iconName="SiTypescript" />
@@ -59,7 +58,11 @@ export default function About() {
             <StackModal iconName="SiMongodb" />
             <StackModal iconName="SiMysql" />
             <StackModal iconName="SiNextdotjs" />
-         </div>
+            <StackModal iconName="SiNextdotjs" />
+            <StackModal iconName="SiNextdotjs" />
+            <StackModal iconName="SiNextdotjs" />
+            <StackModal iconName="SiNextdotjs" />
+         </StacksContainer>
          <div>
             <p>Certifications</p>
 

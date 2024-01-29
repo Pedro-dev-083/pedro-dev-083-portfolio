@@ -7,6 +7,7 @@ import React, {
 import Modal from "../../components/Modal/Modal";
 import * as allIcons from "react-icons/si";
 import { IconBaseProps } from "react-icons";
+import { Container } from "./styled";
 
 interface StackModalProps {
    iconName: string;
@@ -38,7 +39,9 @@ export default function StackModal({
    const LazyIcon = React.lazy(() => importIcon(iconName));
    return LazyIcon ? (
       <React.Suspense fallback={<div>Loading...</div>}>
-         <LazyIcon onClick={() => setStateModal(true)} />
+         <Container>
+            <LazyIcon onClick={() => setStateModal(true)} />
+         </Container>
          {/* TODO: Add the knowledge i have on this technology */}
          <Modal isCalled={stateModal} setIsCalled={setStateModal}>
             <p>{iconName}</p>

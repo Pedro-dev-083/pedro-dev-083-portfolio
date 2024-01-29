@@ -10,3 +10,12 @@ export const PhotoContainer = styled.div`
    border-radius: 50%;
    border: "5px solid #F00";
 `;
+
+export const StacksContainer = styled.div`
+   background-color: green;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   grid-column-gap: 0px;
+   grid-row-gap: 0px;
+`;
