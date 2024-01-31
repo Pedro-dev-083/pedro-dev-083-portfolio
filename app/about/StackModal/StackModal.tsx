@@ -41,6 +41,9 @@ export default function StackModal({
       <React.Suspense fallback={<div>Loading...</div>}>
          <Container>
             <LazyIcon onClick={() => setStateModal(true)} />
+            <p>{iconName}</p>
+            <p>Skill: </p>
+            <p>Level: 3 years</p>
          </Container>
          {/* TODO: Add the knowledge i have on this technology */}
          <Modal isCalled={stateModal} setIsCalled={setStateModal}>
