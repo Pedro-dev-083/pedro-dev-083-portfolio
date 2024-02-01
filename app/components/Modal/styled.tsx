@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ModalContainer = styled.div`
+export const ModalContainer = styled.div<{ $animation: boolean }>`
    background-color: rgba(60, 60, 60, 0.9);
    height: 100%;
    width: 100%;
@@ -12,14 +12,23 @@ export const ModalContainer = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
-   z-index: 1;
+   opacity: ${(props) => (props.$animation ? "1" : "0")};
+   z-index: ${(props) => (props.$animation ? "1" : "-1")};
+   transition: 0.65s ease;
 `;
 
-export const Container = styled.div<{ height: number; width: number }>`
+export const Container = styled.div<{
+   height: number;
+   width: number;
+   $animation: boolean;
+}>`
+   transform: translateY(${(props) => (props.$animation ? "0" : "-85vh")});
+   transition: 0.65s ease;
    background-color: #fdfdfd;
    border-radius: 10px;
    height: ${(props) => props.height}px;
    width: ${(props) => props.width}px;
+   z-index: 5;
    #iconExitContainer {
       position: relative;
       width: 95%;

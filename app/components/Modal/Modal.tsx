@@ -11,7 +11,7 @@ interface ModalProps {
 
 export default function Modal({
    children,
-   isCalled,
+   isCalled = false,
    setIsCalled,
    height = 400,
    width = 700,
@@ -31,19 +31,20 @@ export default function Modal({
       };
    }, [setIsCalled]);
    return (
-      <>
-         {isCalled ? (
-            <ModalContainer>
-               <Container ref={modalRef} height={height} width={width}>
-                  <div id="iconExitContainer">
-                     <p id="iconExit" onClick={() => setIsCalled(false)}>
-                        X
-                     </p>
-                  </div>
-                  {children}
-               </Container>
-            </ModalContainer>
-         ) : null}
-      </>
+      <ModalContainer $animation={isCalled}>
+         <Container
+            ref={modalRef}
+            height={height}
+            width={width}
+            $animation={isCalled}
+         >
+            <div id="iconExitContainer">
+               <p id="iconExit" onClick={() => setIsCalled(false)}>
+                  X
+               </p>
+            </div>
+            {children}
+         </Container>
+      </ModalContainer>
    );
 }
