@@ -65,10 +65,19 @@ export default function About() {
          </StacksContainer>
          <div>
             <p>Certifications</p>
+            <a
+               href={
+                  "https://cursos.alura.com.br/user/pedroazevedo83/fullCertificate/92175fbee5c62bc0351c228158cd629f"
+               }
+               target="_blank"
+               rel="noopener noreferrer"
+            >
+               Alura Certificate
+            </a>
 
             <a
                href={
-                  "https://portifolio-pedro-dev-083-bucket.s3.sa-east-1.amazonaws.com/Pedro+Souza+de+Azevedo.pdf"
+                  "https://portifolio-pedro-dev-083-bucket.s3.sa-east-1.amazonaws.com/Curriculos/Pedro+Souza+de+Azevedo+-+Curriculum.pdf"
                }
                target="_blank"
                rel="noopener noreferrer"

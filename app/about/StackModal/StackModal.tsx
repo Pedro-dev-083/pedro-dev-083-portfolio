@@ -7,7 +7,12 @@ import React, {
 import Modal from "../../components/Modal/Modal";
 import * as allIcons from "react-icons/si";
 import { IconBaseProps } from "react-icons";
-import { Container } from "./styled";
+import {
+   Container,
+   ContainerIconLevel,
+   ContainerSkill,
+   IconLevel,
+} from "./styled";
 
 interface StackModalProps {
    iconName: string;
@@ -43,7 +48,14 @@ export default function StackModal({
             <Container>
                <LazyIcon onClick={() => setStateModal(true)} />
                <p>{iconName}</p>
-               <p>Skill: </p>
+               <ContainerSkill>
+                  <p>Skill:</p>
+                  <ContainerIconLevel>
+                     <IconLevel />
+                     <IconLevel />
+                     <IconLevel />
+                  </ContainerIconLevel>
+               </ContainerSkill>
                <p>Level: 3 years</p>
             </Container>
          </React.Suspense>
