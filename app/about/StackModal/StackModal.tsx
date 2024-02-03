@@ -27,6 +27,9 @@ export default function StackModal({
 }: StackModalProps): ReactElement | null {
    const [stateModal, setStateModal] = useState<boolean>(false);
 
+   const skill = 3;
+
+   //TODO: Make a fake component which will be the copy of Lazy
    const importIcon = async (name: string): Promise<ImportIconResult> => {
       try {
          const uppercasedName = name.charAt(0).toUpperCase() + name.slice(1);
@@ -44,21 +47,21 @@ export default function StackModal({
    const LazyIcon = React.lazy(() => importIcon(iconName));
    return LazyIcon ? (
       <>
-         <React.Suspense fallback={<p></p>}>
-            <Container>
+         <Container>
+            <React.Suspense fallback={}>
                <LazyIcon onClick={() => setStateModal(true)} />
-               <p>{iconName}</p>
-               <ContainerSkill>
-                  <p>Skill:</p>
-                  <ContainerIconLevel>
-                     <IconLevel />
-                     <IconLevel />
-                     <IconLevel />
-                  </ContainerIconLevel>
-               </ContainerSkill>
-               <p>Level: 3 years</p>
-            </Container>
-         </React.Suspense>
+            </React.Suspense>
+            <p>{iconName}</p>
+            <ContainerSkill>
+               <p>Skill:</p>
+               <ContainerIconLevel>
+                  {Array.from({ length: skill }, (_, index) => (
+                     <IconLevel key={index} />
+                  ))}
+               </ContainerIconLevel>
+            </ContainerSkill>
+            <p>Level: 3 years</p>
+         </Container>
          {/* TODO: Add the knowledge i have on this technology */}
          <Modal isCalled={stateModal} setIsCalled={setStateModal}>
             <p>{iconName}</p>
