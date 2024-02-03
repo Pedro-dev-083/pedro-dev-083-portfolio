@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-   background-color: blue;
-   height: 250px;
-   width: 200px;
-   border-radius: 5px;
+   background-color: #eaeaea;
+   height: 210px;
+   width: 300px;
+   border-radius: 15px;
+   margin: 30px;
+   padding: 10px;
 `;
 
 export const ContainerSkill = styled.div.attrs(() => ({

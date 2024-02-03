@@ -12,10 +12,8 @@ export const PhotoContainer = styled.div`
 `;
 
 export const StacksContainer = styled.div`
-   /* background-color: green; */
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(3, 1fr);
-   grid-column-gap: 0px;
-   grid-row-gap: 0px;
+   background-color: green;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
 `;

@@ -55,13 +55,7 @@ export default function About() {
             <StackModal iconName="SiNodedotjs" />
             <StackModal iconName="SiTypescript" />
             <StackModal iconName="SiDotnet" />
-            <StackModal iconName="SiMongodb" />
-            <StackModal iconName="SiMysql" />
-            <StackModal iconName="SiNextdotjs" />
-            <StackModal iconName="SiNextdotjs" />
-            <StackModal iconName="SiNextdotjs" />
-            <StackModal iconName="SiNextdotjs" />
-            <StackModal iconName="SiNextdotjs" />
+            {/* <StackModal iconName="SiMongodb" /> */}
          </StacksContainer>
          <div>
             <p>Certifications</p>
