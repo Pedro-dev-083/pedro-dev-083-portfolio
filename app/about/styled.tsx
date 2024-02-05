@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const SummaryContainer = styled.div`
+   display: flex;
+   justify-content: center;
+   align-items: center;
+`;
+
 export const PhotoContainer = styled.div`
    padding: 5px;
    margin: 5px;
@@ -9,6 +15,10 @@ export const PhotoContainer = styled.div`
    width: 250px;
    border-radius: 50%;
    border: "5px solid #F00";
+`;
+
+export const AboutContainer = styled.div`
+   width: 50%;
 `;
 
 export const StacksContainer = styled.div`
