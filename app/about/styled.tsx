@@ -2,8 +2,13 @@ import styled from "styled-components";
 
 export const SummaryContainer = styled.div`
    display: flex;
-   justify-content: center;
+   flex-direction: column;
    align-items: center;
+   div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
 `;
 
 export const PhotoContainer = styled.div`

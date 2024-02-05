@@ -12,44 +12,41 @@ export default function About() {
    return (
       <div>
          <SummaryContainer>
-            <PhotoContainer>
-               <Image
-                  src={"https://avatars.githubusercontent.com/u/60190590?v=4"}
-                  alt={"Image of the developer"}
-                  width={250}
-                  height={250}
-                  style={{ borderRadius: "50%" }}
-               />
-            </PhotoContainer>
-            <AboutContainer>
-               <p>
-                  I am an information systems developer with experience
-                  professional at TopDown Sistemas, where I was responsible for
-                  legacy code migrations and new feature development for
-                  healthcare management systems, using ASP.NET MVC, jQuery and
-                  PL/SQL. Additionally, I created training videos for share
-                  knowledge with co-workers and gained experience with Azure
-                  DevOps, including Pull Requests, control of versioning,
-                  deployments, sprints and management of tasks. Before that, I
-                  worked as an intern at the same company, where I conducted the
-                  migration of legacy code screens, carried out automated tests
-                  and worked closely with the methodology Scrum, using Azure
-                  DevOps and Git for project control. I also have experience as
-                  an intern at COREN-RJ, where I developed a web application
-                  full-stack and created tools for data compilation, and how
-                  Young Apprentice in Administrative Operations at Supergasbras
-                  - AMZ, where I worked with tax documents and acquired skills
-                  essential for the corporate environment. My focus is on
-                  continuous learning and development of skills in various areas
-                  of technology. I am committed to contributing to challenging
-                  projects and constantly evolving as information systems
-                  developer.
-               </p>
-            </AboutContainer>
+            <h1>Who I am</h1>
+            <div>
+               <PhotoContainer>
+                  <Image
+                     src={
+                        "https://avatars.githubusercontent.com/u/60190590?v=4"
+                     }
+                     alt={"Image of the developer"}
+                     width={250}
+                     height={250}
+                     style={{ borderRadius: "50%" }}
+                  />
+               </PhotoContainer>
+               <AboutContainer>
+                  <p>
+                     I am an information systems developer with experience
+                     professional at TopDown Sistemas, where I was responsible
+                     for legacy code migrations and new feature development for
+                     healthcare management systems, using ASP.NET MVC, jQuery
+                     and PL/SQL.
+                  </p>
+               </AboutContainer>
+            </div>
          </SummaryContainer>
-         <p>Saying about my background as a dev</p>
-         <p>Where I live now and where I wish to go</p>
+         {/* TODO: A idea: make a component which is separated by a line and loads only when I scroll*/}
          <div>
+            <h1>How I became a Dev</h1>
+            <p>Saying about my background as a dev</p>
+         </div>
+         <div>
+            <h1>Plans to go on</h1>
+            <p>Where I live now and where I wish to go</p>
+         </div>
+         <div>
+            <h1>Besides coding, who I am</h1>
             <p>Tell other stuff about me without code</p>
             <p>Tell about games that I like</p>
             <p>Youtube, cannot forget</p>
