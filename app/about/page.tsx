@@ -5,10 +5,10 @@ import {
    MainContainer,
    PhotoContainer,
    StacksContainer,
-   SubStoryContainer,
    SummaryContainer,
 } from "./styled";
 import StackModal from "./StackModal/StackModal";
+import SubStoryContainer from "./SubStoryContainer/SubStoryContainer";
 
 export default function About() {
    return (
@@ -39,19 +39,13 @@ export default function About() {
             </div>
          </SummaryContainer>
          {/* TODO: A idea: make a component which is separated by a line and loads only when I scroll*/}
-         <SubStoryContainer>
-            <h1>How I became a Dev</h1>
-            <div></div>
+         <SubStoryContainer title="How I became a Dev">
             <p>Saying about my background as a dev</p>
          </SubStoryContainer>
-         <SubStoryContainer $isReverse>
-            <h1>Plans to go on</h1>
-            <div></div>
+         <SubStoryContainer title="Plans to go on" isReverse>
             <p>Where I live now and where I wish to go</p>
          </SubStoryContainer>
-         <SubStoryContainer>
-            <h1>Besides coding, who I am</h1>
-            <div></div>
+         <SubStoryContainer title="Besides coding, who I am">
             <p>Tell other stuff about me without code</p>
             <p>Tell about games that I like</p>
             <p>Youtube, cannot forget</p>

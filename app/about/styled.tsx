@@ -33,26 +33,6 @@ export const AboutContainer = styled.div`
    width: 50%;
 `;
 
-export const SubStoryContainer = styled.div<{ $isReverse?: boolean }>`
-   display: flex;
-   flex-direction: ${(props) => (props.$isReverse ? "row-reverse" : "row")};
-   justify-content: center;
-   align-items: center;
-   margin: 50px;
-   width: 50%;
-   div {
-      width: 1px;
-      height: 100px;
-      background-color: black;
-   }
-   h1 {
-      /* width: 40%; */
-   }
-   p {
-      /* width: 40%; */
-   }
-`;
-
 export const StacksContainer = styled.div`
    background-color: green;
    display: flex;
