@@ -2,15 +2,17 @@
 import Image from "next/image";
 import {
    AboutContainer,
+   MainContainer,
    PhotoContainer,
    StacksContainer,
+   SubStoryContainer,
    SummaryContainer,
 } from "./styled";
 import StackModal from "./StackModal/StackModal";
 
 export default function About() {
    return (
-      <div>
+      <MainContainer>
          <SummaryContainer>
             <h1>Who I am</h1>
             <div>
@@ -37,21 +39,24 @@ export default function About() {
             </div>
          </SummaryContainer>
          {/* TODO: A idea: make a component which is separated by a line and loads only when I scroll*/}
-         <div>
+         <SubStoryContainer>
             <h1>How I became a Dev</h1>
+            <div></div>
             <p>Saying about my background as a dev</p>
-         </div>
-         <div>
+         </SubStoryContainer>
+         <SubStoryContainer $isReverse>
             <h1>Plans to go on</h1>
+            <div></div>
             <p>Where I live now and where I wish to go</p>
-         </div>
-         <div>
+         </SubStoryContainer>
+         <SubStoryContainer>
             <h1>Besides coding, who I am</h1>
+            <div></div>
             <p>Tell other stuff about me without code</p>
             <p>Tell about games that I like</p>
             <p>Youtube, cannot forget</p>
             <p>Edit videos</p>
-         </div>
+         </SubStoryContainer>
          <StacksContainer>
             {/* TODO: In a technology that I click, I can show I project that I used that technology */}
             <StackModal iconName="SiJavascript" />
@@ -82,6 +87,6 @@ export default function About() {
                Resume
             </a>
          </div>
-      </div>
+      </MainContainer>
    );
 }
