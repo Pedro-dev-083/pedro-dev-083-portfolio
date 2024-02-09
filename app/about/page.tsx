@@ -38,7 +38,6 @@ export default function About() {
                </AboutContainer>
             </div>
          </SummaryContainer>
-         {/* TODO: A idea: make a component which is separated by a line and loads only when I scroll*/}
          <SubStoryContainer title="How I became a Dev">
             <p>Saying about my background as a dev</p>
          </SubStoryContainer>
@@ -57,7 +56,6 @@ export default function About() {
             <StackModal iconName="SiNodedotjs" />
             <StackModal iconName="SiTypescript" />
             <StackModal iconName="SiDotnet" />
-            {/* <StackModal iconName="SiMongodb" /> */}
          </StacksContainer>
          <div>
             <p>Certifications</p>

@@ -14,6 +14,8 @@ import {
    ContainerSkill,
    IconLevel,
 } from "./styled";
+import Link from "next/link";
+import Image from "next/image";
 
 interface StackModalProps {
    iconName: string;
@@ -66,7 +68,38 @@ export default function StackModal({
          {/* TODO: Add the knowledge i have on this technology */}
          <Modal isCalled={stateModal} setIsCalled={setStateModal}>
             <React.Suspense fallback={<p>Loading...</p>}>
-               <p>{iconName}</p>
+               <div>
+                  <p>Last project I worked on:</p>
+                  <div>
+                     <p>Name: Tag Creator Api</p>
+                     <a
+                        href={
+                           "https://github.com/Pedro-dev-083/tag-creator-api"
+                        }
+                        target="_blank"
+                        rel="noopener noreferrer"
+                     >
+                        Repository: tag-creator-api
+                     </a>
+                     <Image
+                        src={
+                           "https://portifolio-pedro-dev-083-bucket.s3.sa-east-1.amazonaws.com/projects-images/4862756037.png"
+                        }
+                        alt={"An barcode"}
+                        width={150}
+                        height={150}
+                     />
+                     <p>
+                        Description: An API, wrote in Python, that creates an
+                        barcode like the commonly used on markets
+                     </p>
+                  </div>
+                  <div>
+                     <Link href={"/projects"}>
+                        See other projects in Python
+                     </Link>
+                  </div>
+               </div>
             </React.Suspense>
          </Modal>
       </>
