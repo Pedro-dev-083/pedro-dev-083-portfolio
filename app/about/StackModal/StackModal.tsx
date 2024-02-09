@@ -10,6 +10,7 @@ import { SiJavascript } from "react-icons/si";
 import { IconBaseProps } from "react-icons";
 import {
    Container,
+   ContainerContent,
    ContainerIconLevel,
    ContainerSkill,
    IconLevel,
@@ -68,9 +69,26 @@ export default function StackModal({
          {/* TODO: Add the knowledge i have on this technology */}
          <Modal isCalled={stateModal} setIsCalled={setStateModal}>
             <React.Suspense fallback={<p>Loading...</p>}>
-               <div>
+               <ContainerContent>
                   <p>Last project I worked on:</p>
                   <div>
+                     <p>Name: Tag Creator Api</p>
+                     <p>Name: Tag Creator Api</p>
+                     <p>Name: Tag Creator Api</p>
+                     <p>Name: Tag Creator Api</p>
+                     <p>Name: Tag Creator Api</p>
+                     <p>Name: Tag Creator Api</p>
+                     <p>Name: Tag Creator Api</p>
+                     <p>Name: Tag Creator Api</p>
+                     <p>Name: Tag Creator Api</p>
+                     <p>Name: Tag Creator Api</p>
+                     <p>Name: Tag Creator Api</p>
+                     <p>Name: Tag Creator Api</p>
+                     <p>Name: Tag Creator Api</p>
+                     <p>Name: Tag Creator Api</p>
+                     <p>Name: Tag Creator Api</p>
+                     <p>Name: Tag Creator Api</p>
+                     <p>Name: Tag Creator Api</p>
                      <p>Name: Tag Creator Api</p>
                      <a
                         href={
@@ -99,7 +117,7 @@ export default function StackModal({
                         See other projects in Python
                      </Link>
                   </div>
-               </div>
+               </ContainerContent>
             </React.Suspense>
          </Modal>
       </>
