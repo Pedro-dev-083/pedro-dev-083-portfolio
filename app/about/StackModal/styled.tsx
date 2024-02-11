@@ -39,5 +39,5 @@ export const IconLevel = styled.div.attrs(() => ({
 export const ContainerContent = styled.div`
    height: 80%;
    overflow-y: scroll;
-   margin: 45px;
+   margin: 55px;
 `;

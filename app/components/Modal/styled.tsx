@@ -15,6 +15,9 @@ export const ModalContainer = styled.div<{ $animation: boolean }>`
    opacity: ${(props) => (props.$animation ? "1" : "0")};
    z-index: ${(props) => (props.$animation ? "1" : "-1")};
    transition: 0.65s ease;
+   html {
+      overflow: ${(props) => (props.$animation ? "hidden" : "auto")};
+   }
 `;
 
 export const Container = styled.div<{

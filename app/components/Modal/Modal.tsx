@@ -30,6 +30,22 @@ export default function Modal({
          document.removeEventListener("mousedown", handleOutsideClick);
       };
    }, [setIsCalled]);
+
+   useEffect(() => {
+      if (isCalled) {
+         document.body.style.overflow = "hidden";
+         document.body.style.paddingRight = "8px";
+      } else {
+         document.body.style.overflow = "auto";
+         document.body.style.paddingRight = "0";
+      }
+
+      return () => {
+         document.body.style.overflow = "auto";
+         document.body.style.paddingRight = "0";
+      };
+   }, [isCalled]);
+
    return (
       <ModalContainer $animation={isCalled}>
          <Container
