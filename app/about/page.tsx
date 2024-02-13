@@ -29,27 +29,36 @@ export default function About() {
                </PhotoContainer>
                <AboutContainer>
                   <p>
-                     I am an information systems developer with experience
-                     professional at TopDown Sistemas, where I was responsible
-                     for legacy code migrations and new feature development for
-                     healthcare management systems, using ASP.NET MVC, jQuery
-                     and PL/SQL.
+                     I am a young dev graduated in Information Systems and
+                     specializing in Software Engineering. FullStack Developer
+                     in Javascript and C#, but open to work on other
+                     technologies too. Besides coding, I like to play indie and
+                     retro games.
+                     <a
+                        href={
+                           "https://portifolio-pedro-dev-083-bucket.s3.sa-east-1.amazonaws.com/Curriculos/Pedro+Souza+de+Azevedo+-+Curriculum.pdf"
+                        }
+                        target="_blank"
+                        rel="noopener noreferrer"
+                     >
+                        Click here to see a Resume about me.
+                     </a>
                   </p>
                </AboutContainer>
             </div>
          </SummaryContainer>
          <SubStoryContainer title="How I became a Dev">
-            <p>Saying about my background as a dev</p>
+            <p>I always love to use a computer to </p>
          </SubStoryContainer>
          <SubStoryContainer title="Plans to go on" isReverse>
             <p>Where I live now and where I wish to go</p>
          </SubStoryContainer>
-         <SubStoryContainer title="Besides coding, who I am">
+         {/* <SubStoryContainer title="Besides coding, who I am">
             <p>Tell other stuff about me without code</p>
             <p>Tell about games that I like</p>
             <p>Youtube, cannot forget</p>
             <p>Edit videos</p>
-         </SubStoryContainer>
+         </SubStoryContainer> */}
          <StacksContainer>
             {/* TODO: In a technology that I click, I can show I project that I used that technology */}
             <StackModal iconName="SiJavascript" />
@@ -57,28 +66,6 @@ export default function About() {
             <StackModal iconName="SiTypescript" />
             <StackModal iconName="SiDotnet" />
          </StacksContainer>
-         <div>
-            <p>Certifications</p>
-            <a
-               href={
-                  "https://cursos.alura.com.br/user/pedroazevedo83/fullCertificate/92175fbee5c62bc0351c228158cd629f"
-               }
-               target="_blank"
-               rel="noopener noreferrer"
-            >
-               Alura Certificate
-            </a>
-
-            <a
-               href={
-                  "https://portifolio-pedro-dev-083-bucket.s3.sa-east-1.amazonaws.com/Curriculos/Pedro+Souza+de+Azevedo+-+Curriculum.pdf"
-               }
-               target="_blank"
-               rel="noopener noreferrer"
-            >
-               Resume
-            </a>
-         </div>
       </MainContainer>
    );
 }
