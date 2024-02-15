@@ -30,8 +30,10 @@ export const Container = styled.div<{
    flex-direction: ${(props) => (props.$isReverse ? "row-reverse" : "row")};
    justify-content: center;
    align-items: center;
-   margin: 50px;
-   width: 50%;
+   padding: 50px 0;
+   margin: 30px 0;
+   width: 90%;
+   font-size: 16px;
    opacity: ${({ $isVisible }) => ($isVisible ? 1 : 0)};
    animation: ${({ $isVisible }) => ($isVisible ? fadeIn : fadeOut)} 0.5s
       ease-in-out;
@@ -41,7 +43,7 @@ export const Container = styled.div<{
    .line {
       margin: 0 15px;
       width: 1px;
-      height: 100px;
+      height: 500px;
       background-color: black;
    }
 `;

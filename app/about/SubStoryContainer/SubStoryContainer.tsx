@@ -12,7 +12,7 @@ export default function SubStoryContainer({
    children,
    isReverse,
 }: SubStoryContainerProps) {
-   const [isVisible, setIsVisible] = useState<boolean>(false);
+   const [isVisible, setIsVisible] = useState(false);
 
    useEffect(() => {
       const handleScroll = () => {
