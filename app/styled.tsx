@@ -14,6 +14,7 @@ export const Container = styled.div`
    align-items: center;
 `;
 
+//TODO: Remove this
 export const PhotoContainer = styled.div`
    padding: 5px;
    margin: 5px;

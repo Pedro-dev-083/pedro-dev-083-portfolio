@@ -22,6 +22,7 @@ export default function Page() {
    return (
       <MainContainer>
          <Container>
+            {/* TODO: Change the photo for something about World */}
             <PhotoContainer>
                <Image
                   src={"https://avatars.githubusercontent.com/u/60190590?v=4"}
@@ -35,9 +36,7 @@ export default function Page() {
                <HelloText $shouldAnimate={shouldAnimate}>
                   <b>Hello World</b>, I am Pedro
                </HelloText>
-               {/* TODO: Make some animation or icons about coffees and codes */}
                <AboutText>
-                  {/* I am just a guy who loves to drink code and develop coffee. */}
                   Here is my little space where you can find my{" "}
                   <Link href={"/projects"}>projects</Link> and more{" "}
                   <Link href={"/about"}> about me.</Link>
