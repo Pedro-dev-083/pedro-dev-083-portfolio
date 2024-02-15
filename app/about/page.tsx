@@ -106,6 +106,7 @@ export default function About() {
                <StackModal iconName="SiNodedotjs" />
                <StackModal iconName="SiTypescript" />
                <StackModal iconName="SiDotnet" />
+               <StackModal iconName="SiPython" />
             </StacksContainer>
          </SkillsContainer>
       </MainContainer>
