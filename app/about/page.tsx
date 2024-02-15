@@ -4,6 +4,7 @@ import {
    AboutContainer,
    MainContainer,
    PhotoContainer,
+   SkillsContainer,
    StacksContainer,
    SummaryContainer,
 } from "./styled";
@@ -91,16 +92,22 @@ export default function About() {
                in Software Engineering at PUC-Rio.
             </p>
          </SubStoryContainer>
-         <SubStoryContainer title="Plans to go on" isReverse>
-            <p>Where I live now and where I wish to go</p>
+         <SubStoryContainer title="Plans to the future" isReverse height={200}>
+            <p>
+               I am currently looking for some new opportunity where is a
+               collaborative space which I can help with my knowledge and also
+               learn new ways to code, with open mindset and agile.{" "}
+            </p>
          </SubStoryContainer>
-         <StacksContainer>
-            {/* TODO: In a technology that I click, I can show I project that I used that technology */}
-            <StackModal iconName="SiJavascript" />
-            <StackModal iconName="SiNodedotjs" />
-            <StackModal iconName="SiTypescript" />
-            <StackModal iconName="SiDotnet" />
-         </StacksContainer>
+         <SkillsContainer>
+            <h1>My Stack</h1>
+            <StacksContainer>
+               <StackModal iconName="SiJavascript" />
+               <StackModal iconName="SiNodedotjs" />
+               <StackModal iconName="SiTypescript" />
+               <StackModal iconName="SiDotnet" />
+            </StacksContainer>
+         </SkillsContainer>
       </MainContainer>
    );
 }

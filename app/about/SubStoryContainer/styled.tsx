@@ -25,6 +25,7 @@ const fadeOut = keyframes`
 export const Container = styled.div<{
    $isReverse?: boolean;
    $isVisible: boolean;
+   $height: number;
 }>`
    display: flex;
    flex-direction: ${(props) => (props.$isReverse ? "row-reverse" : "row")};
@@ -43,7 +44,7 @@ export const Container = styled.div<{
    .line {
       margin: 0 15px;
       width: 1px;
-      height: 500px;
+      height: ${(props) => props.$height}px;
       background-color: black;
    }
 `;

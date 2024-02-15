@@ -65,6 +65,13 @@ export const AboutContainer = styled.div`
    width: 50%;
 `;
 
+export const SkillsContainer = styled.div`
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+`;
+
 export const StacksContainer = styled.div`
    display: flex;
    justify-content: center;

@@ -5,12 +5,14 @@ interface SubStoryContainerProps {
    title: string;
    children: React.ReactNode;
    isReverse?: boolean;
+   height?: number;
 }
 
 export default function SubStoryContainer({
    title,
    children,
    isReverse,
+   height = 500,
 }: SubStoryContainerProps) {
    const [isVisible, setIsVisible] = useState(false);
 
@@ -37,6 +39,7 @@ export default function SubStoryContainer({
          ref={containerRef}
          $isReverse={isReverse}
          $isVisible={isVisible}
+         $height={height}
       >
          <div>
             <h1>{title}</h1>
