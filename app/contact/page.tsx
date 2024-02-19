@@ -4,7 +4,7 @@ import { MainContainer } from "../styled";
 export default function Contact() {
    return (
       <MainContainer>
-         <p>Contact</p>
+         <a href="mailto:pedroazevedo83@hotmail.com">Email</a>
          <p>Linkedin</p>
          <p>Whatsapp</p>
       </MainContainer>
