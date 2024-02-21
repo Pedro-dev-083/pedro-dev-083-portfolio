@@ -1,19 +1,19 @@
 "use client";
 import { GrLinkedin } from "react-icons/gr";
 import { MdEmail } from "react-icons/md";
-import { MainContainer } from "./styled";
+import { IconContainer, MainContainer } from "./styled";
 
 export default function Contact() {
    const iconSize = 30;
    return (
       <MainContainer>
-         <div>
+         <IconContainer $IconColor="green">
             E-mail:
             <a href="mailto:pedroazevedo83@hotmail.com">
                <MdEmail size={iconSize} />
             </a>
-         </div>
-         <div>
+         </IconContainer>
+         <IconContainer $IconColor="blue">
             Linkedin:
             <a
                href="https://www.linkedin.com/in/pedro-souza-de-azevedo/"
@@ -22,7 +22,7 @@ export default function Contact() {
             >
                <GrLinkedin size={iconSize} />
             </a>
-         </div>
+         </IconContainer>
       </MainContainer>
    );
 }

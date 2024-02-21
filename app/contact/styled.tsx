@@ -6,17 +6,18 @@ export const MainContainer = styled.div`
    justify-content: space-between;
    align-items: center;
    padding: 15%;
-   div {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 15%;
-      svg {
-         color: black;
-         transition: 0.3s ease-in-out;
-         &:hover {
-            color: blue;
-         }
+`;
+
+export const IconContainer = styled.div<{ $IconColor: string }>`
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 15%;
+   svg {
+      color: black;
+      transition: 0.3s ease-in-out;
+      &:hover {
+         color: ${(props) => props.$IconColor};
       }
    }
 `;
