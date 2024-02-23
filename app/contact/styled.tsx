@@ -5,7 +5,8 @@ export const MainContainer = styled.div`
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
-   padding: 15%;
+   padding: 10%;
+   font-size: 30px;
 `;
 
 export const IconContainer = styled.div<{ $IconColor: string }>`
