@@ -19,20 +19,32 @@ export default function Contact() {
             </TitleContainer>
             <ContactContainer>
                <IconContainer $IconColor="#DB4A39">
-                  <a href="mailto:pedroazevedo83@hotmail.com">
-                     <MdEmail size={iconSize} />
-                     <p>pedroazevedo83@hotmail.com</p>
-                  </a>
+                  <div>
+                     <a href="mailto:pedroazevedo83@hotmail.com">
+                        <MdEmail size={iconSize} />
+                     </a>
+                     <a href="mailto:pedroazevedo83@hotmail.com">
+                        pedroazevedo83@hotmail.com
+                     </a>
+                  </div>
                </IconContainer>
                <IconContainer $IconColor="#0E76A8">
-                  <a
-                     href="https://www.linkedin.com/in/pedro-souza-de-azevedo/"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                  >
-                     <GrLinkedin size={iconSize} />
-                     <p>https://www.linkedin.com/in/pedro-souza-de-azevedo/</p>
-                  </a>
+                  <div>
+                     <a
+                        href="https://www.linkedin.com/in/pedro-souza-de-azevedo/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                     >
+                        <GrLinkedin size={iconSize} />
+                     </a>
+                     <a
+                        href="https://www.linkedin.com/in/pedro-souza-de-azevedo/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                     >
+                        https://www.linkedin.com/in/pedro-souza-de-azevedo/
+                     </a>
+                  </div>
                </IconContainer>
             </ContactContainer>
          </Container>
