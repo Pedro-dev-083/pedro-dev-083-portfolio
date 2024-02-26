@@ -10,7 +10,7 @@ import {
 } from "./styled";
 
 export default function Contact() {
-   const iconSize = 50;
+   const iconSize = 55;
    return (
       <MainContainer>
          <Container>
