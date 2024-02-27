@@ -35,7 +35,7 @@ const RoutesContainer = styled.div`
    justify-content: space-between;
    align-items: center;
    height: 100%;
-   width: 20%;
+   width: 30%;
 `;
 
 export { Container, HeaderMain, LogoContainer, RoutesContainer };

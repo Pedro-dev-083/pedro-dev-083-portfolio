@@ -52,6 +52,12 @@ export default function Header() {
                         About
                      </RouteLink>
                      <RouteLink
+                        iAmTheCurrentLink={isCurrentPath("/projects")}
+                        href={"/projects"}
+                     >
+                        Projects
+                     </RouteLink>
+                     <RouteLink
                         iAmTheCurrentLink={isCurrentPath("/contact")}
                         href={"/contact"}
                      >
