@@ -34,3 +34,17 @@ export const ProjectContainer = styled.div`
       transform: scale(1.1);
    }
 `;
+
+export const NumberBox = styled.div`
+   background-color: #f1f1f1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 20px;
+   width: 20px;
+   border-radius: 5px;
+   margin: 30px;
+   padding: 10px;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+`;

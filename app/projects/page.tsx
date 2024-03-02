@@ -1,6 +1,11 @@
 "use client";
 import { SiPython } from "react-icons/si";
-import { Container, ProjectContainer, StackContainer } from "./styled";
+import {
+   Container,
+   NumberBox,
+   ProjectContainer,
+   StackContainer,
+} from "./styled";
 
 export default function Projects() {
    return (
@@ -17,6 +22,9 @@ export default function Projects() {
             <ProjectContainer>
                <p>Project</p>
             </ProjectContainer>
+            <NumberBox>
+               <p>1</p>
+            </NumberBox>
          </div>
       </Container>
    );
