@@ -1,8 +1,9 @@
 "use client";
-import { Container, ProjectContainer } from "./styled";
+import { Container } from "./styled";
 import { useState } from "react";
 import Pagination from "../components/Pagination/Pagination";
-import StackContainer from "./StackContainer/StackContainer";
+import Stack from "./Stack/Stack";
+import Project from "./Project/Project";
 
 export default function Projects() {
    const [page, setPage] = useState(1);
@@ -12,13 +13,11 @@ export default function Projects() {
          <p>Projects Page</p>
          <div>
             <h1>Stacks</h1>
-            <StackContainer />
+            <Stack />
          </div>
          <div>
             <h1>Projects</h1>
-            <ProjectContainer>
-               <p>Project</p>
-            </ProjectContainer>
+            <Project />
             <Pagination page={page} setPage={setPage} pagesLimit={6} />
          </div>
       </Container>
