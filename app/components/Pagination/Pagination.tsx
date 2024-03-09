@@ -24,6 +24,7 @@ export default function Pagination({
       setPage((prevPage) => prevPage + 1);
    };
    return (
+      // TODO: A function where, if its the number is the same of the page, the button will be different
       <PaginationContainer>
          <NumberContainer>
             <div>
