@@ -1,4 +1,6 @@
-import { NumberBox, NumberContainer, PaginationContainer } from "./styled";
+import { useState } from "react";
+import NumberBox from "./NumberBox/NumberBox";
+import { NumberContainer, PaginationContainer } from "./styled";
 
 interface PaginationProps {
    page: number;
@@ -16,6 +18,8 @@ export default function Pagination({
    const showLeftArrow = page > 1;
    const showRightArrow = page < numbers.length - 1;
 
+   const [actualPage, setActualPage] = useState(1);
+
    const handleClickLeft = () => {
       setPage((prevPage) => (prevPage - 1 < 0 ? 0 : prevPage - 1));
    };
@@ -24,7 +28,6 @@ export default function Pagination({
       setPage((prevPage) => prevPage + 1);
    };
    return (
-      // TODO: A function where, if its the number is the same of the page, the button will be different
       <PaginationContainer>
          <NumberContainer>
             <div>
@@ -34,13 +37,29 @@ export default function Pagination({
             </div>
             {page <= 1 || page == numbers.length ? (
                <>
-                  <NumberBox>{numbers[0]}</NumberBox>
-                  <NumberBox>{numbers[1]}</NumberBox>
+                  <NumberBox
+                     onClick={() => setActualPage(numbers[0])}
+                     page={actualPage}
+                  >
+                     {numbers[0]}
+                  </NumberBox>
+                  <NumberBox
+                     onClick={() => setActualPage(numbers[1])}
+                     page={actualPage}
+                  >
+                     {numbers[1]}
+                  </NumberBox>
                </>
             ) : (
-               numbers
-                  .slice(page - 1, page + 2)
-                  .map((number) => <NumberBox key={number}>{number}</NumberBox>)
+               numbers.slice(page - 1, page + 2).map((number) => (
+                  <NumberBox
+                     onClick={() => setActualPage(number)}
+                     page={actualPage}
+                     key={number}
+                  >
+                     {number}
+                  </NumberBox>
+               ))
             )}
          </NumberContainer>
          <div>
