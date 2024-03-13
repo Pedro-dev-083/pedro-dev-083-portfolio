@@ -11,6 +11,7 @@ export const ProjectContainer = styled.div`
    -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.47);
    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.47);
    transition: transform 0.3s ease;
+   cursor: pointer;
 
    &:hover {
       transform: scale(1.1);
