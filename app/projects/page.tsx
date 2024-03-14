@@ -7,6 +7,7 @@ import Project from "./Project/Project";
 
 export default function Projects() {
    const [page, setPage] = useState(1);
+   const [stack, setStack] = useState("");
 
    const containerRef = useRef<HTMLDivElement>(null);
    const isDragging = useRef(false);
@@ -53,11 +54,11 @@ export default function Projects() {
          <div>
             <h1>Stacks</h1>
             <StacksContainer ref={containerRef}>
-               <Stack />
-               <Stack />
-               <Stack />
-               <Stack />
-               <Stack />
+               <Stack stack={stack} setStack={setStack} />
+               <Stack stack={stack} setStack={setStack} />
+               <Stack stack={stack} setStack={setStack} />
+               <Stack stack={stack} setStack={setStack} />
+               <Stack stack={stack} setStack={setStack} />
             </StacksContainer>
          </div>
          <div>
