@@ -13,9 +13,12 @@ export default function Stack({ stack, setStack }: StackProps) {
       stack === "SiPython" ? setItsMe(true) : setItsMe(false);
    }, [stack]);
    return (
-      <Container $itsMe={itsMe} onClick={() => {
-         stack === "SiPython" ? setStack("") : setStack("SiPython");
-      }}>
+      <Container
+         $itsMe={itsMe}
+         onClick={() => {
+            stack === "SiPython" ? setStack("") : setStack("SiPython");
+         }}
+      >
          <SiPython size={25} />
       </Container>
    );
