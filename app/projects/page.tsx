@@ -3,7 +3,7 @@ import { Container, ProjectsContainer, StacksContainer } from "./styled";
 import { useEffect, useRef, useState } from "react";
 import Pagination from "../components/Pagination/Pagination";
 import Stack from "./Stack/Stack";
-import Project from "./Project/Project";
+import ProjectModal from "./ProjectModal/ProjectModal";
 
 export default function Projects() {
    const [page, setPage] = useState(1);
@@ -64,11 +64,11 @@ export default function Projects() {
          <div>
             <h1>Projects</h1>
             <ProjectsContainer>
-               <Project />
-               <Project />
-               <Project />
-               <Project />
-               <Project />
+               <ProjectModal />
+               <ProjectModal />
+               <ProjectModal />
+               <ProjectModal />
+               <ProjectModal />
             </ProjectsContainer>
             <Pagination page={page} setPage={setPage} pagesLimit={6} />
          </div>
