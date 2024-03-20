@@ -1,25 +1,27 @@
 import { SiPython } from "react-icons/si";
 import { Container } from "./styled";
 import { useEffect, useState } from "react";
+import IconComponent from "../../components/IconComponent/IconComponent";
 
 interface StackProps {
    stack: string;
    setStack: React.Dispatch<React.SetStateAction<string>>;
+   iconName: string;
 }
 
-export default function Stack({ stack, setStack }: StackProps) {
+export default function Stack({ stack, setStack, iconName }: StackProps) {
    const [itsMe, setItsMe] = useState(false);
    useEffect(() => {
-      stack === "SiPython" ? setItsMe(true) : setItsMe(false);
-   }, [stack]);
+      stack === iconName ? setItsMe(true) : setItsMe(false);
+   }, [stack, iconName]);
    return (
       <Container
          $itsMe={itsMe}
          onClick={() => {
-            stack === "SiPython" ? setStack("") : setStack("SiPython");
+            stack === iconName ? setStack("") : setStack(iconName);
          }}
       >
-         <SiPython size={25} />
+         <IconComponent iconName={iconName} />
       </Container>
    );
 }

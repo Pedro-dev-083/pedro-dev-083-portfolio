@@ -54,11 +54,23 @@ export default function Projects() {
          <div>
             <h1>Stacks</h1>
             <StacksContainer ref={containerRef}>
-               <Stack stack={stack} setStack={setStack} />
-               <Stack stack={stack} setStack={setStack} />
-               <Stack stack={stack} setStack={setStack} />
-               <Stack stack={stack} setStack={setStack} />
-               <Stack stack={stack} setStack={setStack} />
+               <Stack
+                  stack={stack}
+                  setStack={setStack}
+                  iconName={"SiJavascript"}
+               />
+               <Stack
+                  stack={stack}
+                  setStack={setStack}
+                  iconName={"SiNodedotjs"}
+               />
+               <Stack
+                  stack={stack}
+                  setStack={setStack}
+                  iconName={"SiTypescript"}
+               />
+               <Stack stack={stack} setStack={setStack} iconName={"SiDotnet"} />
+               <Stack stack={stack} setStack={setStack} iconName={"SiPython"} />
             </StacksContainer>
          </div>
          <div>
