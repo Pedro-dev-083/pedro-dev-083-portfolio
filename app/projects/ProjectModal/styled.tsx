@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const ProjectContainer = styled.div`
    background-color: #eaeaea;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    height: 210px;
    width: 300px;
    border-radius: 15px;
