@@ -20,4 +20,8 @@ export const ProjectContainer = styled.div`
    &:hover {
       transform: scale(1.1);
    }
+
+   p {
+      font-size: 23px;
+   }
 `;

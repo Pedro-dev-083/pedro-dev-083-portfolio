@@ -16,7 +16,7 @@ export default function ProjectModal() {
                width={150}
                height={150}
             />
-            <p>Project</p>
+            <p>Name of the Project</p>
          </ProjectContainer>
          <Project visible={visible} setVisible={setVisible} />
       </>
